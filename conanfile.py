@@ -34,7 +34,7 @@ class LibNumlConan(ConanFile):
         if self.settings.os == "Windows":
             del self.options.fPIC
 
-        self.requires("libsbml/5.18.1@fbergmann/stable")
+        self.requires("libsbml/5.18.3@fbergmann/stable")
         self.options['libsbml'].shared = self.options.shared
 
     def source(self):
